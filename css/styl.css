@@ -9,7 +9,7 @@ body{
 	font-family:Arial, Helvetica, sans-serif;
 }
 .wrap{
-	width:80%;
+	width:100%;
 	margin:0 auto;
 	-moz-transition:all .2s linear;
 	-webkit-transition:all .2s linear; 
@@ -98,20 +98,27 @@ transition: .2s all linear;
 	display: block;
 }
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+    border: 0.5px solid black;
+    
+    align-content: center;
+    max-width: 100%;
+    
 }
 th, td {
     padding: 5px;
     text-align: center;
     border-right: none;
-  border-left: none;
+
   border-top: none;
   border-bottom: none;
 }
-body
+html, body
 {
 	background-color: #fff;
+
+  margin: 0 auto;
+  
+  overflow-x: hidden;
 }
 th {
     padding-top: 12px;
@@ -160,10 +167,11 @@ input[type=submit]:hover {
 }
 #footer
 {
-  border-radius: 25px;
-    background: #73AD21;
-    padding: 20px; 
-    width: 80%;
+  
+    background: #4CAF50;
+    padding-left:10px;
+    padding-right: 10px;
+    width: 100 %;
     text-align: center;
 }
 a {
@@ -186,5 +194,16 @@ a {
 }
 
 .round {
-    border-radius: 50%;
+    border-radius: 20%;
+}
+
+.wrapper
+{
+  background-color:#4CAF50;
+  border-radius: 25px; 
+  
+}
+.content
+{
+  max-width: 80%;
 }
