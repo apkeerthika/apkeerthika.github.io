@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" type="text/css" href="css/MyStyle.css">
+        <script>
+            function ValidateContactForm()
+            {
+                var name = document.ContactForm.Name;
+                var email = document.ContactForm.Email;
+                var comment = document.ContactForm.Comment;
+            
+                if (name.value == "")
+                {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                }
+                
+                if (email.value == "")
+                {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                if (email.value.indexOf("@", 0) < 0)
+                {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                if (email.value.indexOf(".", 0) < 0)
+                {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+            
+                if (comment.value == "")
+                {
+                    window.alert("Please provide a detailed description or comment.");
+                    comment.focus();
+                    return false;
+                }
+                return true;
+            }
+            
+            </script>
+    </head>
+    <body>
+        <!-- Starting Navbar !-->
+            <nav id="navbar">
+                <div class="container">
+                    <ul>
+                        <li style="float:left;font-size:30px;"><a href="#"><i>Beauty & C</i><small style="text-decoration:underline">O</small></a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Book Online</a></li>
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                
+                </div>
+            </nav>
+        <!-- Ending Navbar !-->
+
+        <!-- Showcase !-->
+            <section id="showcase">
+                <div class="container">
+                    <h1><i>Welcome</i></h1>
+                    <h4><small>To A Full Beauty & Co Experience</small></h4>
+                </div>
+            </section>
+        <!-- End Showcase !-->
+
+        <!-- Box Models !-->
+        <div class="container">
+            <div class="block">
+                <h1>Facials</h1>
+                <p><i>Pellentesque imperdiet et neque id varius. 
+                Mauris condimentum orci vel sapien pulvinar, id semper felis volutpat. 
+                Morbi tincidunt eleifend nisl, quis venenatis orci. Mauris diam est, tincidunt nec nibh quis, commodo pellentesque augue.</i>
+                </p>
+                <center><a class="button" href="My-Shop.html">Book Now</a></center>
+            </div>
+            
+            <div class="block-1">
+                <h1>MakeUp</h1>
+                <p><i>Pellentesque imperdiet et neque id varius. 
+                Mauris condimentum orci vel sapien pulvinar, id semper felis volutpat. 
+                Morbi tincidunt eleifend nisl, quis venenatis orci. Mauris diam est, tincidunt nec nibh quis, commodo pellentesque augue.</i>
+                </p>
+                <center><a class="button" href="My-Shop.html">Book Now</a></center>
+            </div>
+        </div>
+        <!-- End Box Models !-->
+    
+        <!-- Sidebar !-->
+            <div class="container-1">
+                <div id="sidebar">
+                    <h2>Winter Special</h2>
+                    <p>This rejuvenating facial with powerful fruit enzymes and fruit acids helps to unveil fresh healthy skin. Facial includes a thorough exfoliation, tightening Epicuren mask, and a second mask customized.</p>
+                    <h2>Winter Express Package</h2>
+                    <p>Do you need a little me time? Enjoy an express 25-minute facial, 25-minute traditional massage, and spa manicure. $126</p>
+                    
+                </div>
+            </div>
+        <!-- End SideBar !-->
+
+        <!-- Contact Us !-->
+            <div class="container-2">
+                <div class="form-style" method="post" action="mailto:keerthi2592@gmail.com" 
+                name="ContactForm" onsubmit="return ValidateContactForm();">
+                    <h1>Contact Us</h1>
+                        <form>
+                            <input type="text" name="field1" placeholder="Your Name" />
+                            <input type="email" name="field2" placeholder="Email Address" />
+                            <textarea name="field3" placeholder="Type your Message"></textarea>
+                            <input type="submit" value="Send" />
+                        </form>
+                </div>
+            </div>
+        <!-- End !-->
+
+        <!-- Showcase 1 -->
+            <section id="showcase-1">
+                <div class="container">
+                    <h1>
+                       <i># "A Women"</i> 
+                        <br>
+                        Can Be Over Dressed
+                        <br>
+                        But Never Over
+                        <br>
+                        <i>"Elegant"</i>
+                    </h1>
+                    <h2>
+                        Click
+                        <strong>Here</strong>
+                    </h2>
+                    
+                    <a href="#" class="next round">&#8250;</a>
+                </div>
+            </section>
+        <!-- End -->
+
+
+        <!--Footer !-->
+            <footer id="main-footer">
+                <div class="container">
+                    <p>Copy Right &copy; 2018 My Website</p>
+                </div>
+            </footer>
+        <!-- End !-->
+    </body>
+</html>
